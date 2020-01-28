@@ -1,0 +1,94 @@
+<html lang="pt">
+
+<head>
+    <title>YouTube API v3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <style>
+        body {
+            background: #F0F0F0;
+        }
+
+        div#janela ul {
+            width: 1090px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        div#janela ul li.principal {
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+            width: 320px;
+            height: 180px;
+        }
+
+        div#janela ul li.principal div.foto {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 180px;
+            z-index: 1;
+            clip: rect(0 320 180 0);
+        }
+
+        div#janela ul li.principal div.foto div.legenda {
+            position: absolute;
+            top: 145px;
+            left: 0;
+            width: 310px;
+            height: 180px;
+            padding: 5px;
+            z-index: 2;
+            cursor: pointer;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            -webkit-transition: all 0.5s ease-out 0s;
+            -moz-transition: all 0.5s ease-out 0s;
+            -ms-transition: all 0.5s ease-out 0s;
+            -o-transition: all 0.5s ease-out 0s;
+            transition: all 0.5s ease-out 0s;
+        }
+
+        div#janela ul li.principal div.foto div.legenda:hover {
+            top: 50px;
+        }
+
+        div#janela ul li.principal div.foto div.legenda h5 {
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: 100;
+            color: aqua;
+            margin: 0;
+
+        }
+
+        div#janela ul li.principal div.foto div.legenda p {
+            font-family: sans-serif;
+            font-size: 0.7em;
+            color: aliceblue;
+
+        }
+    </style>
+
+</head>
+<html>
+<div style="display:flex; justify-content: center;">
+    <input type="text" id="nick" placeholder="Nome do canal" style="width: 250px; height: 35px;">
+    <button onclick="procura()" style="height: 35px;">Procurar</button>
+</div>
+<div id="janela">
+    <ul id="lista">
+
+    </ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="meuscript.js"></script>
+
+</html>
+
+</html>
