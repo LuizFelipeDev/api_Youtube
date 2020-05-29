@@ -9,7 +9,7 @@ function procura() {
         part: 'snippet',
         maxResults: 5,
         q: nomeCanal,
-        key: 'AIzaSyA1dG98OLviyoXMG_BEs14v9rT9Y5kyu0g'
+        key: 'AIzaSyAO7JOrbmCSTuQ-mH5_t-HE7S9O1-41wls'
     },
         function (data) {
             console.log(data);
@@ -27,7 +27,7 @@ function procura() {
         $.get('https://www.googleapis.com/youtube/v3/channels', {
             part: 'contentDetails',
             id: canalId,
-            key: 'AIzaSyA1dG98OLviyoXMG_BEs14v9rT9Y5kyu0g'
+            key: 'AIzaSyAO7JOrbmCSTuQ-mH5_t-HE7S9O1-41wls'
         },
             function (data) {
                 upload_id = data.items[0].contentDetails.relatedPlaylists.uploads;
@@ -41,7 +41,7 @@ function procura() {
             part: 'snippet',
             maxResults: 12,
             playlistId: id,
-            key: 'AIzaSyA1dG98OLviyoXMG_BEs14v9rT9Y5kyu0g'
+            key: 'AIzaSyAO7JOrbmCSTuQ-mH5_t-HE7S9O1-41wls'
         },
             function (data) {
                 console.log(data);
